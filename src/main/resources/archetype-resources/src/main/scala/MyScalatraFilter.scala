@@ -1,4 +1,4 @@
-package net.srirangan
+package ${package}
 
 import org.scalatra._
 import java.net.URL

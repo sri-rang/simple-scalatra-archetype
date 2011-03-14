@@ -10,7 +10,7 @@ An [Apache Maven](http://maven.apache.org/) archetype to generate a simple [Scal
 		mvn install
 
 1. Generate your Scalatra project
-		mvn archetype:generate -DarchetypeArtifactId=simple-scalatra-archetype -DarchetypeGroupId=org.scalatra -DarchetypeVersion=1.0-SNAPSHOT -DgroupId={TempGroupId} -DartifactId={TempArtifactId}
+		mvn archetype:generate -DarchetypeArtifactId=simple-scalatra-archetype -DarchetypeGroupId=org.scalatra -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=just.some.group -DartifactId=just-some-artifact
 
 2. Switch to the project directory
 		cd {TempArtifactId}

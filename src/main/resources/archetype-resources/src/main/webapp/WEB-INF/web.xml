@@ -7,7 +7,7 @@
 	<filter>
 		<filter-name>scalatra</filter-name>
 		<filter-class>
-			net.srirangan.MyScalatraFilter
+			${package}.MyScalatraFilter
 		</filter-class>
 	</filter>
 	

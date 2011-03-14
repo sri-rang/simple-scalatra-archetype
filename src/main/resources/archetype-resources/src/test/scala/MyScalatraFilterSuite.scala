@@ -1,4 +1,4 @@
-package net.srirangan
+package ${package}
 
 import org.scalatra._
 import org.scalatra.test.scalatest._
