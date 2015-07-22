@@ -1,7 +1,4 @@
-package $ {
-package
-
-}
+package ${package}
 
 import org.scalatra.ScalatraServlet
 import org.scalatra.scalate.ScalateSupport
