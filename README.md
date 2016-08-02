@@ -13,7 +13,7 @@ An [Apache Maven](http://maven.apache.org/) archetype to generate a simple [Scal
 		mvn archetype:generate -DarchetypeArtifactId=simple-scalatra-archetype -DarchetypeGroupId=org.scalatra -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=just.some.group -DartifactId=just-some-artifact
 
 2. Switch to the project directory
-		cd {TempArtifactId}
+		cd just-some-artifact
 
 3. Install your project
 		mvn install
