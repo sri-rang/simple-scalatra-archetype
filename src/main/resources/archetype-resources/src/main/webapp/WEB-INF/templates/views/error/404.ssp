@@ -1,7 +1,7 @@
-<%@ var title: String = "401 Forbidden" %>
+<%@ var title: String = "404 NotFound" %>
 
-<h2>401 Forbidden</h2>
+<h2>404 NotFound</h2>
 
 <p>
-    You do not have permission to access this page.
+    Page not found
 </p>

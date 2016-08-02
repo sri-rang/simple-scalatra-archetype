@@ -1,0 +1,58 @@
+#set( $symbol_escape = '\' )
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+
+        <!DOCTYPE html>
+
+        <% import org.scalatra.scalate.ScalatraRenderContext %>
+
+        <%@ var body: String %>
+        <%@ var title: String = "${artifactId}" %>
+
+        <% var flash = context.asInstanceOf[ScalatraRenderContext].flash %>
+
+        <html>
+        <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+            </head>
+
+            <body>
+
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">${artifactId}</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">Home</a></li>
+
+
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+                </nav>
+
+
+                <div class="container theme-showcase" role="main">
+
+                <div style="margin-top: 256px;">
+                    #set( $D = '${' )
+                    #set( $E = '}' )
+                    $D unescape(body) $E
+                </div>
+
+                </div>
+            </body>
+        </html>
